@@ -34,7 +34,7 @@ Pin | Name
 
 ## Technical Details
 
-To understand the CN2 connector, it is also necessary to understand the A/D chip, the NEC D63200 (aka uPD63200).  This chip receives similar data, *but not identical*, as is sent out of the CN2 connector.  This is because both parts share the same `CLK` and `L/~R Clock` signals.  Datasheets for the D63200 exist in Japanese and English as published by NEC and Renesas Technology who later purchased a portion of NEC.
+To understand the CN2 connector, it is also necessary to understand the D/A chip, the NEC D63200 (aka uPD63200).  This chip receives similar data, *but not identical*, as is sent out of the CN2 connector.  This is because both parts share the same `CLK` and `L/~R Clock` signals.  Datasheets for the D63200 exist in Japanese and English as published by NEC and Renesas Technology who later purchased a portion of NEC.
 
 The DB51XG has configured the D63200 to use 1 of its input pin for data for both left and right channels of audio (rather than 2 separate pins) and as 18-bits per sample per channel.  This is done via some of the D63200 pins being permanently pulled low or high by the board.
 
